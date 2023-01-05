@@ -17,7 +17,7 @@ public class CadastroVeiculoController {
     CadastrarVeiculoService service;
 
     @ResponseStatus(value = HttpStatus.CREATED)
-    @PostMapping
+    @PostMapping("/cadastrarVeiculo")
     public VeiculoDTO cadastrarVeiculo(@RequestBody VeiculoDTO veiculoDTO) throws Exception {
         return service.cadastrarVeiculo(veiculoDTO);
     }
